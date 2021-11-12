@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Todo</title>
+</head>
+
+<body style="background-image: url('./img/stadium.png');">
+    <div class="container">
+
+        <!-- welcome area -->
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid bg-info">
+                    <div class="container">
+                        <h1 class="display-4 text-center text-white">Pokemon game</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button section  -->
+        <div class="row d-none" id="sectionStartPanel">
+            <div class="col-12">
+                <button class="btn btn-success btn-block">
+                    <span class="h2">
+                        Start
+                    </span>
+                </button>
+            </div>
+            <div class="col-12">
+                <button class="btn mt-4 btn-danger btn-block">
+                    <span class="h2">
+                        Exit
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Play area -->
+        <div class="row" id="sectionPlayPanel">
+            <div class="col">
+                <!-- user card -->
+                <div class="jumbotron jumbotron-fluid bg-info">
+                    <div class="container  d-flex flex-column align-items-center">
+                        <img src="./img/me.png" class="img-fluid" style="width:100px;">
+                        <h1 class="display-5 text-center text-white">Me</h1>
+                        <h1 class="display-5 text-center text-white" id="winGame1">BEGIN</h1>
+                        <p class="h4  text-white text-center " id="player1ScorePanel"> Score: 0 </p>
+                    </div>
+                </div>
+
+                <!-- Pokemon card -->
+                <div class="card">
+                    <img id="player1Img" src="./img/w.png" class="card-img-top" alt="..."
+                        style="width:150px; height:150px">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <p class="display-1 text-danger text-center">VS</p>
+            </div>
+            <div class="col">
+                <!-- user card -->
+
+                <div class="jumbotron jumbotron-fluid bg-info">
+                    <div class="container d-flex flex-column align-items-center">
+                        <img src="./img/comp.png" class="img-fluid" style="width:100px;">
+                        <h1 class="display-5 text-center text-white">Comp</h1>
+                        <h1 class="display-5 text-center text-white" id="winGame2">BEGIN</h1>
+
+                        <p class="h4  text-white text-center " id="player2ScorePanel"> Score: 0 </p>
+                    </div>
+                </div>
+
+                <!-- Pokemon card -->
+                <div class="card">
+                    <img id="player2Img" src="./img/e.png" class="card-img-top" alt="..."
+                        style="width:150px; height:150px">
+                    <div class="card-body">
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Attack Area -->
+    </div>
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"> </script>
+
+</body>
+
+</html>
